@@ -1,0 +1,77 @@
+:root {
+  --violeta: #8246ab;
+  --azul: #31829b;
+  --gris-fondo: #ede6f5;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: var(--gris-fondo);
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.logo-camila {
+  display: block;
+  margin: 40px auto 8px auto;
+  max-width: 220px;
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  color: var(--violeta);
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 32px;
+  margin-top: 8px;
+  letter-spacing: 2px;
+}
+
+.ruleta-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(130,70,171,0.11);
+  padding: 32px 32px 22px 32px;
+  min-width: 340px;
+}
+
+#ruleta {
+  margin-bottom: 24px;
+  background: #f7f5fc;
+  border-radius: 50%;
+  box-shadow: 0 1px 8px rgba(130,70,171,0.04);
+}
+
+#btn-girar {
+  margin-top: 12px;
+  background: var(--violeta);
+  color: #fff;
+  font-size: 1.15rem;
+  border: none;
+  border-radius: 9px;
+  padding: 12px 38px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(130,70,171,0.10);
+  transition: background 0.2s;
+}
+#btn-girar:disabled {
+  background: #d6c3ee;
+  cursor: not-allowed;
+}
+
+#mensaje-ruleta {
+  font-size: 1.2rem;
+  margin: 20px 0 0 0;
+  min-height: 38px;
+  color: var(--azul);
+  font-weight: bold;
+  text-align: center;
+}
