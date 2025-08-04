@@ -15,12 +15,12 @@ const totalSectores = sectores.length;
 const anguloSector = 2 * Math.PI / totalSectores;
 
 const probabilidades = [
-  0.03,
-  0.07,
-  0.225,
-  0.225,
-  0.225,
-  0.225,
+  0.01,   // 1% para 50%
+  0.07,   // 7% para 10%
+  0.23,   // 23% para Nada 1
+  0.23,   // 23% para Nada 2
+  0.23,   // 23% para Nada 3
+  0.23    // 23% para Nada 4
 ];
 
 function sortearSector() {
@@ -135,3 +135,4 @@ function mostrarMensaje(sector) {
     mensaje.innerHTML = `¡Uy! Seguí participando ${premio.icon}`;
   }
 }
+
